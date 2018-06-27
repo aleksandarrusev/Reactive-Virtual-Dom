@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  h1,h3,h5 {
+    text-align:center;
+  }
+  #app{
+    width: 80%;
+    margin:0 auto;
+  }
+  .form {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    width:205px;
+    padding:20px;
+    margin:0 auto 15px;
+
+  }
+  .todo {
+    border:1px solid #ccc;
+    padding:20px;
+    text-align:center;
+    font-size:20px;
+
+    .remove {
+      float:right;
+      cursor:pointer;
+      &:hover {
+        color:red;
+      }
+    }
+  }
+}
