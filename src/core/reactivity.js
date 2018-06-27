@@ -1,5 +1,5 @@
 
-import {updateDom} from './ui';
+import {render} from './ui';
 import {store} from './store';
 
 
@@ -12,7 +12,7 @@ export const makeReactive = function(obj, property) {
         set(newValue) {
             console.log(referenceValue + ' was changed to ' + newValue)
             referenceValue = newValue;
-            updateDom();
+            render();
         },
     });
 }
